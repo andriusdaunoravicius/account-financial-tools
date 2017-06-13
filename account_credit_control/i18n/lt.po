@@ -33,6 +33,18 @@ msgid ""
 "        Best regards\n"
 "      "
 msgstr ""
+"\n"
+"        Mūsų duomenys rodo, kad mes vis dar negavome iš pirmiau minėtų sąskaitų apmokėjimo nepaisant mūsų dviejų priminimų.\n"
+"        Jei mokėjimas jau buvo išsiųstas, nekreipkite dėmesio į šį pranešimą. Jei ne, prašome tęsti mokėjimą.\n"
+"        Jei jūsų mokėjimas nebus gautas per ateinančias 5 dienas, jūsų duomenys bus perduoti mūsų skolų išieškojimo agentūrai.\n"
+"\n"
+"        Jei jums reikia, kad mes pasirūpintumėme mokėjimo planu jums, prašome pranešti.\n"
+"        Jūsų patogumui, kliento sąskaitos išrašas yra pridedamas.\n"
+"\n"
+"        Iš anksto dėkojame už jūsų numatomą bendradarbiavimą šiuo klausimu.\n"
+"\n"
+"        Geriausi linkėjimai\n"
+"      "
 
 #. module: account_credit_control
 #: model:email.template,body_html:account_credit_control.email_template_credit_control_base
@@ -43,44 +55,48 @@ msgid ""
 "      <br/>\n"
 "      ${object.current_policy_level.custom_mail_text}\n"
 "      "
-msgstr ""
+msgstr "Gerb. ${object.contact_address.name or ''}\n"
+"      <br/>\n"
+"      <br/>\n"
+"      ${object.current_policy_level.custom_mail_text}\n"
+"      "
 
 #. module: account_credit_control
 #: model:credit.control.policy.level,name:account_credit_control.3_time_3
 msgid "10 days last reminder"
-msgstr ""
+msgstr "10 dienų paskutinis priminimas"
 
 #. module: account_credit_control
 #: model:credit.control.policy.level,name:account_credit_control.3_time_1
 msgid "10 days net"
-msgstr ""
+msgstr "10 dienų grynais"
 
 #. module: account_credit_control
 #: model:credit.control.policy.level,name:account_credit_control.2_time_1
 #: model:credit.control.policy.level,name:account_credit_control.3_time_2
 msgid "30 days end of month"
-msgstr ""
+msgstr "30 dienų mėnesio pabaiga"
 
 #. module: account_credit_control
 #: model:credit.control.policy.level,name:account_credit_control.2_time_2
 msgid "60 days last reminder"
-msgstr ""
+msgstr "60 dienų paskutinis priminimas"
 
 #. module: account_credit_control
 #: model:ir.model,name:account_credit_control.model_credit_control_line
 msgid "A credit control line"
-msgstr ""
+msgstr "Kredito valdymo linija"
 
 #. module: account_credit_control
 #: code:addons/account_credit_control/run.py:93
 #, python-format
 msgid "A credit control line more recent than %s exists at %s"
-msgstr ""
+msgstr "Kredito valdymo linija naujesnė nei %s egzistuoja %s"
 
 #. module: account_credit_control
 #: model:ir.model,name:account_credit_control.model_credit_control_policy_level
 msgid "A credit control policy level"
-msgstr ""
+msgstr "Kredito kontrolės poliso lygis"
 
 #. module: account_credit_control
 #: code:addons/account_credit_control/run.py:161
@@ -88,25 +104,26 @@ msgstr ""
 msgid ""
 "A credit control run is already running in background, please try later."
 msgstr ""
+"Kredito kontrolės patikrinimas jau veikia fone, pamėginkite vėliau."
 
 #. module: account_credit_control
 #: code:addons/account_credit_control/run.py:86
 #, python-format
 msgid "A run has already been executed more recently than %s"
-msgstr ""
+msgstr "Patikrinimas jau buvo įvykdytas neseniau nei %s"
 
 #. module: account_credit_control
 #: view:credit.control.line:account_credit_control.credit_control_line_search
 #: field:credit.control.line,account_id:0
 #: model:ir.model,name:account_credit_control.model_account_account
 msgid "Account"
-msgstr ""
+msgstr "Sąskaita"
 
 #. module: account_credit_control
 #: view:credit.control.policy:account_credit_control.credit_control_policy_form
 #: field:credit.control.policy,account_ids:0
 msgid "Accounts"
-msgstr ""
+msgstr "Sąskaitos"
 
 #. module: account_credit_control
 #: field:credit.control.policy,active:0
@@ -116,18 +133,18 @@ msgstr "Aktyvus"
 #. module: account_credit_control
 #: model:ir.actions.act_window,help:account_credit_control.action_wizard_credit_policy_changer
 msgid "Allows to manually change credit level"
-msgstr ""
+msgstr "Leisti rankiniu būdu pakeisti kredito lygį"
 
 #. module: account_credit_control
 #: view:credit.control.line:account_credit_control.credit_control_line_search
 msgid "An error has occured during the sending of the email."
-msgstr ""
+msgstr "Įvyko klaida siunčiant el. laišką."
 
 #. module: account_credit_control
 #: code:addons/account_credit_control/policy.py:308
 #, python-format
 msgid "Can not get function for computation mode: %s is not implemented"
-msgstr ""
+msgstr "Negali gauti funkcijos skaičiavimo režimui: %s nėra įgyvendintos"
 
 #. module: account_credit_control
 #: view:credit.control.emailer:account_credit_control.credit_line_emailer_form
@@ -142,40 +159,40 @@ msgstr "Atšaukti"
 #: model:ir.actions.act_window,name:account_credit_control.open_credit_line_marker_wizard
 #: model:ir.actions.act_window,name:account_credit_control.open_credit_line_marker_wizard_menu_action
 msgid "Change Lines' State"
-msgstr ""
+msgstr "Pakeisti eilutės būseną"
 
 #. module: account_credit_control
 #: model:ir.actions.act_window,name:account_credit_control.action_wizard_credit_policy_changer
 #: model:ir.actions.act_window,name:account_credit_control.action_wizard_credit_policy_changer_menu_action
 msgid "Change current credit policy"
-msgstr ""
+msgstr "Pakeisti dabartinę kredito politiką"
 
 #. module: account_credit_control
 #: view:credit.control.policy.changer:account_credit_control.credit_control_policy_changer_form
 msgid "Change the overdue level of current invoice"
-msgstr ""
+msgstr "Pakeiskite dabartinės sąskaitos vėluovimo lygį"
 
 #. module: account_credit_control
 #: view:credit.control.marker:account_credit_control.credit_line_marker_form
 msgid "Change the state of the selected lines"
-msgstr ""
+msgstr "Keisti pasirinktų linijų būseną"
 
 #. module: account_credit_control
 #: model:ir.actions.act_window,help:account_credit_control.open_credit_line_marker_wizard
 msgid "Change the state of the selected lines."
-msgstr ""
+msgstr "Keisti pasirinktų linijų būseną"
 
 #. module: account_credit_control
 #: view:credit.control.line:account_credit_control.credit_control_line_search
 #: field:credit.control.line,channel:0
 #: field:credit.control.policy.level,channel:0
 msgid "Channel"
-msgstr ""
+msgstr "Kanalas"
 
 #. module: account_credit_control
 #: model:ir.model,name:account_credit_control.model_res_company
 msgid "Companies"
-msgstr ""
+msgstr "Įmonės"
 
 #. module: account_credit_control
 #: field:credit.control.communication,company_id:0
@@ -187,34 +204,34 @@ msgstr "Įmonė"
 #. module: account_credit_control
 #: view:credit.control.run:account_credit_control.credit_control_run_form
 msgid "Compute Credit Control Lines"
-msgstr ""
+msgstr "Skaičiuokite Kredito Valdymo linijas"
 
 #. module: account_credit_control
 #: field:credit.control.policy.level,computation_mode:0
 msgid "Compute Mode"
-msgstr ""
+msgstr "Skaičiavimo režimas"
 
 #. module: account_credit_control
 #: field:credit.control.communication,contact_address:0
 msgid "Contact Address"
-msgstr ""
+msgstr "Kontaktinis adresas"
 
 #. module: account_credit_control
 #: view:credit.control.line:account_credit_control.credit_control_line_form
 #: view:credit.control.line:account_credit_control.credit_control_line_search
 #: view:credit.control.line:account_credit_control.credit_control_line_tree
 msgid "Control Credit Lines"
-msgstr ""
+msgstr "Kontrolės kredito linijos"
 
 #. module: account_credit_control
 #: field:credit.control.run,date:0
 msgid "Controlling Date"
-msgstr ""
+msgstr "Kontrolės data"
 
 #. module: account_credit_control
 #: field:credit.control.line,date:0
 msgid "Controlling date"
-msgstr ""
+msgstr "Kontrolės data"
 
 #. module: account_credit_control
 #: field:credit.control.communication,create_uid:0
@@ -227,7 +244,7 @@ msgstr ""
 #: field:credit.control.printer,create_uid:0
 #: field:credit.control.run,create_uid:0
 msgid "Created by"
-msgstr ""
+msgstr "Sukurta"
 
 #. module: account_credit_control
 #: field:credit.control.communication,create_date:0
@@ -240,19 +257,19 @@ msgstr ""
 #: field:credit.control.printer,create_date:0
 #: field:credit.control.run,create_date:0
 msgid "Created on"
-msgstr ""
+msgstr "Sukurta"
 
 #. module: account_credit_control
 #: view:account.invoice:account_credit_control.invoice_followup_form_view
 #: model:ir.ui.menu,name:account_credit_control.base_credit_control_configuration_menu
 #: model:ir.ui.menu,name:account_credit_control.base_credit_control_menu
 msgid "Credit Control"
-msgstr ""
+msgstr "Kredito valdymas"
 
 #. module: account_credit_control
 #: model:res.groups,name:account_credit_control.group_account_credit_control_info
 msgid "Credit Control Info"
-msgstr ""
+msgstr "Kredito valdymo informacija"
 
 #. module: account_credit_control
 #: view:account.invoice:account_credit_control.invoice_followup_form_view
@@ -263,50 +280,50 @@ msgstr ""
 #: model:ir.ui.menu,name:account_credit_control.credit_control_line_action_menu
 #: field:res.partner,credit_control_line_ids:0
 msgid "Credit Control Lines"
-msgstr ""
+msgstr "Kredito valdymo linijos"
 
 #. module: account_credit_control
 #: model:res.groups,name:account_credit_control.group_account_credit_control_manager
 msgid "Credit Control Manager"
-msgstr ""
+msgstr "Kredito valdymo Vadybininkas"
 
 #. module: account_credit_control
 #: model:ir.actions.act_window,name:account_credit_control.credit_policy_configuration_action
 #: model:ir.ui.menu,name:account_credit_control.credit_policy_configuration_action_menu
 msgid "Credit Control Policies"
-msgstr ""
+msgstr "Kredito valdymo politika"
 
 #. module: account_credit_control
 #: field:account.invoice,credit_policy_id:0
 #: field:res.company,credit_policy_id:0 field:res.partner,credit_policy_id:0
 msgid "Credit Control Policy"
-msgstr ""
+msgstr "Kredito valdymo politika"
 
 #. module: account_credit_control
 #: model:ir.actions.act_window,name:account_credit_control.credit_control_run
 #: model:ir.ui.menu,name:account_credit_control.credit_control_run_menu
 msgid "Credit Control Run"
-msgstr ""
+msgstr "Kredito valdymo tikrinimas"
 
 #. module: account_credit_control
 #: model:ir.actions.report.xml,name:account_credit_control.credit_control_summary
 msgid "Credit Control Summary"
-msgstr ""
+msgstr "Kredito valdymo santrauka"
 
 #. module: account_credit_control
 #: field:res.company,credit_control_tolerance:0
 msgid "Credit Control Tolerance"
-msgstr ""
+msgstr "Kredito valdymo tolerancija"
 
 #. module: account_credit_control
 #: model:res.groups,name:account_credit_control.group_account_credit_control_user
 msgid "Credit Control User"
-msgstr ""
+msgstr "Kredito valdymo vartotojas"
 
 #. module: account_credit_control
 #: model:email.template,subject:account_credit_control.email_template_credit_control_base
 msgid "Credit Control: (${object.current_policy_level.name or 'n/a'})"
-msgstr ""
+msgstr "Kredito valdymas: (${object.current_policy_level.name or 'n/a'})"
 
 #. module: account_credit_control
 #: field:account.account,credit_control_line_ids:0
@@ -315,92 +332,92 @@ msgstr ""
 #: model:ir.actions.act_window,name:account_credit_control.act_account_credit_relation_relation
 #: model:ir.actions.act_window,name:account_credit_control.act_partner_credit_relation_relation
 msgid "Credit Lines"
-msgstr ""
+msgstr "Kredito eilutės"
 
 #. module: account_credit_control
 #: model:ir.model,name:account_credit_control.model_credit_control_run
 msgid "Credit control line generator"
-msgstr ""
+msgstr "Kredito valdymo eilučių generatorius"
 
 #. module: account_credit_control
 #: view:credit.control.policy:account_credit_control.credit_control_policy_form
 #: view:credit.control.policy:account_credit_control.credit_control_policy_tree
 msgid "Credit control policy"
-msgstr ""
+msgstr "Kredito valdymo politika"
 
 #. module: account_credit_control
 #: view:credit.control.policy:account_credit_control.credit_control_policy_form
 msgid "Credit control policy Level"
-msgstr ""
+msgstr "Kredito valdymo politikos lygis"
 
 #. module: account_credit_control
 #: view:credit.control.policy.level:account_credit_control.credit_control_policy_level_tree
 msgid "Credit control policy level"
-msgstr ""
+msgstr "Kredito valdymo politikos lygis"
 
 #. module: account_credit_control
 #: view:credit.control.run:account_credit_control.credit_control_run_form
 #: view:credit.control.run:account_credit_control.credit_control_run_tree
 msgid "Credit control run"
-msgstr ""
+msgstr "Kredito valdymo tikrinimas"
 
 #. module: account_credit_control
 #: view:credit.control.line:account_credit_control.credit_control_line_search
 msgid "Credit policy"
-msgstr ""
+msgstr "Kredito politika"
 
 #. module: account_credit_control
 #: view:credit.control.line:account_credit_control.credit_control_line_search
 msgid "Credit policy level"
-msgstr ""
+msgstr "Kredito politikos lygis"
 
 #. module: account_credit_control
 #: field:credit.control.communication,currency_id:0
 #: field:credit.control.line,currency_id:0
 msgid "Currency"
-msgstr ""
+msgstr "Valiuta"
 
 #. module: account_credit_control
 #: field:credit.control.policy.level,custom_mail_text:0
 msgid "Custom Mail Message"
-msgstr ""
+msgstr "Pasirinktina pašto žinutė"
 
 #. module: account_credit_control
 #: field:credit.control.policy.level,custom_text:0
 msgid "Custom Message"
-msgstr ""
+msgstr "Pasirinktina žinutė"
 
 #. module: account_credit_control
 #: view:website:account_credit_control.report_credit_control_summary_document
 msgid "Date due"
-msgstr ""
+msgstr "Pabaigos data"
 
 #. module: account_credit_control
 #: model:ir.model,name:account_credit_control.model_credit_control_policy
 msgid "Define a reminder policy"
-msgstr ""
+msgstr "Nustatykite priminimo politiką"
 
 #. module: account_credit_control
 #: field:credit.control.policy.level,delay_days:0
 msgid "Delay (in days)"
-msgstr ""
+msgstr "Delsimas (dienomis)"
 
 #. module: account_credit_control
 #: view:credit.control.policy:account_credit_control.credit_control_policy_form
 #: view:credit.control.policy.level:account_credit_control.credit_mangement_policy_level_form
 msgid "Delay Setting"
-msgstr ""
+msgstr "Delsimo nustatymas"
 
 #. module: account_credit_control
 #: field:credit.control.policy,do_nothing:0
 msgid "Do nothing"
-msgstr ""
+msgstr "Nieko nedaryti"
 
 #. module: account_credit_control
 #: selection:credit.control.line,state:0
 #: selection:credit.control.marker,name:0 selection:credit.control.run,state:0
 msgid "Done"
-msgstr ""
+msgstr "Atlikta"
 
 #. module: account_credit_control
 #: view:credit.control.line:account_credit_control.credit_control_line_search
@@ -411,7 +428,7 @@ msgstr "Juodraštis"
 #. module: account_credit_control
 #: view:credit.control.line:account_credit_control.credit_control_line_search
 msgid "Draft lines have to be triaged."
-msgstr ""
+msgstr "Juodraščio eilutės turi būti suskirstytos."
 
 #. module: account_credit_control
 #: help:credit.control.line,state:0
@@ -420,73 +437,76 @@ msgid ""
 "Ignored lines are lines for which we do not want to send something.\n"
 "Draft and ignored lines will be generated again on the next run."
 msgstr ""
+"Juodraščio eilutės turi būti suskirstytos.\n"
+"Praleistos eilutės yra eilutės, dėl kurių mes nenorime siųsti kažko.\n"
+"Juodraštis ir praleistos eilutės bus sugeneruotos per kitą patikrinimą."
 
 #. module: account_credit_control
 #: field:credit.control.line,amount_due:0
 msgid "Due Amount Tax incl."
-msgstr ""
+msgstr "Mokėtina suma su PVM"
 
 #. module: account_credit_control
 #: selection:credit.control.policy.level,computation_mode:0
 msgid "Due Date"
-msgstr ""
+msgstr "Pabaigos data"
 
 #. module: account_credit_control
 #: selection:credit.control.policy.level,computation_mode:0
 msgid "Due Date, End Of Month"
-msgstr ""
+msgstr "Pabaigos data, mėnesio galas"
 
 #. module: account_credit_control
 #: field:credit.control.line,balance_due:0
 msgid "Due balance"
-msgstr ""
+msgstr "Numatytas balansas"
 
 #. module: account_credit_control
 #: field:credit.control.line,date_due:0
 msgid "Due date"
-msgstr ""
+msgstr "Pabaigos data"
 
 #. module: account_credit_control
 #: selection:credit.control.line,channel:0
 #: selection:credit.control.policy.level,channel:0
 msgid "Email"
-msgstr ""
+msgstr "El. paštas"
 
 #. module: account_credit_control
 #: field:credit.control.policy.level,email_template_id:0
 msgid "Email Template"
-msgstr ""
+msgstr "El. pašto šablonas"
 
 #. module: account_credit_control
 #: selection:credit.control.line,state:0
 msgid "Emailing Error"
-msgstr ""
+msgstr "El. pašto klaida"
 
 #. module: account_credit_control
 #: field:credit.control.line,date_entry:0
 msgid "Entry date"
-msgstr ""
+msgstr "Įsigaliojimo data"
 
 #. module: account_credit_control
 #: view:credit.control.line:account_credit_control.credit_control_line_search
 #: selection:credit.control.line,state:0
 msgid "Error"
-msgstr ""
+msgstr "Klaida"
 
 #. module: account_credit_control
 #: view:credit.control.line:account_credit_control.credit_control_line_search
 msgid "Filters"
-msgstr ""
+msgstr "Filtrai"
 
 #. module: account_credit_control
 #: help:credit.control.policy,do_nothing:0
 msgid "For policies which should not generate lines or are obsolete"
-msgstr ""
+msgstr "Dėl politikos, kuri neturėtų sugeneruoti eilučių arba yra pasenę"
 
 #. module: account_credit_control
 #: field:credit.control.run,line_ids:0
 msgid "Generated lines"
-msgstr ""
+msgstr "Sugeneruotos eilutės"
 
 #. module: account_credit_control
 #: view:credit.control.line:account_credit_control.credit_control_line_search
@@ -500,7 +520,7 @@ msgstr "Grupuoti pagal..."
 #: field:credit.control.policy.level,id:0 field:credit.control.printer,id:0
 #: field:credit.control.run,id:0
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: account_credit_control
 #: help:credit.control.run,manual_ids:0
@@ -508,13 +528,15 @@ msgid ""
 "If a credit control line has been generatedon a policy and the policy has "
 "been changed in the meantime, it has to be handled manually"
 msgstr ""
+"Jei kredito valdymo eilutė buvo sugeneruota politikai ir tuo tarpu politika buvo "
+"pakeista, pakeitimai turi būti tvarkomi rankiniu būdu"
 
 #. module: account_credit_control
 #: view:credit.control.line:account_credit_control.credit_control_line_search
 #: selection:credit.control.line,state:0
 #: selection:credit.control.marker,name:0
 msgid "Ignored"
-msgstr ""
+msgstr "Ignoruotas"
 
 #. module: account_credit_control
 #: view:credit.control.line:account_credit_control.credit_control_line_search
@@ -526,22 +548,22 @@ msgstr "Sąskaita-faktūra"
 #. module: account_credit_control
 #: view:website:account_credit_control.report_credit_control_summary_document
 msgid "Invoice date"
-msgstr ""
+msgstr "Sąskaita data"
 
 #. module: account_credit_control
 #: view:website:account_credit_control.report_credit_control_summary_document
 msgid "Invoice number"
-msgstr ""
+msgstr "Sąskaita numeris"
 
 #. module: account_credit_control
 #: view:website:account_credit_control.report_credit_control_summary_document
 msgid "Invoiced amount"
-msgstr ""
+msgstr "Sąskaitos suma"
 
 #. module: account_credit_control
 #: view:account.invoice:account_credit_control.invoice_followup_form_view
 msgid "Issued Lines"
-msgstr ""
+msgstr "Išduotos eilutės"
 
 #. module: account_credit_control
 #: field:credit.control.communication,write_uid:0
@@ -554,7 +576,7 @@ msgstr ""
 #: field:credit.control.printer,write_uid:0
 #: field:credit.control.run,write_uid:0
 msgid "Last Updated by"
-msgstr ""
+msgstr "Paskutinį kartą atnaujinta"
 
 #. module: account_credit_control
 #: field:credit.control.communication,write_date:0
@@ -567,134 +589,134 @@ msgstr ""
 #: field:credit.control.printer,write_date:0
 #: field:credit.control.run,write_date:0
 msgid "Last Updated on"
-msgstr ""
+msgstr "Paskutinį kartą atnaujinta"
 
 #. module: account_credit_control
 #: selection:credit.control.line,channel:0
 #: selection:credit.control.policy.level,channel:0
 msgid "Letter"
-msgstr ""
+msgstr "Laiškas"
 
 #. module: account_credit_control
 #: field:credit.control.communication,current_policy_level:0
 #: view:credit.control.line:account_credit_control.credit_control_line_search
 #: field:credit.control.policy.level,level:0
 msgid "Level"
-msgstr ""
+msgstr "Lygis"
 
 #. module: account_credit_control
 #: view:credit.control.emailer:account_credit_control.credit_line_emailer_form
 #: view:credit.control.marker:account_credit_control.credit_line_marker_form
 #: view:credit.control.printer:account_credit_control.credit_line_printer_form
 msgid "Lines"
-msgstr ""
+msgstr "Eilutės"
 
 #. module: account_credit_control
 #: view:credit.control.line:account_credit_control.credit_control_line_search
 msgid "Lines already sent."
-msgstr ""
+msgstr "Eilutės jau išsiūstos."
 
 #. module: account_credit_control
 #: view:credit.control.marker:account_credit_control.credit_line_marker_form
 msgid "Lines marker"
-msgstr ""
+msgstr "Eilutės žymeklis"
 
 #. module: account_credit_control
 #: view:credit.control.printer:account_credit_control.credit_line_printer_form
 msgid "Lines report"
-msgstr ""
+msgstr "Eilučių raportas"
 
 #. module: account_credit_control
 #: field:credit.control.run,manual_ids:0
 msgid "Lines to handle manually"
-msgstr ""
+msgstr "Eilutės tvarkomos rankiniu būdu"
 
 #. module: account_credit_control
 #: view:credit.control.line:account_credit_control.credit_control_line_search
 msgid "Lines which have been ignored from previous runs."
-msgstr ""
+msgstr "Eilutės kurios buvo ignoruotos iš ankstesnių tikrinimų."
 
 #. module: account_credit_control
 #: view:credit.control.policy:account_credit_control.credit_control_policy_form
 #: view:credit.control.policy.level:account_credit_control.credit_mangement_policy_level_form
 msgid "Mail and reporting"
-msgstr ""
+msgstr "Paštas ir raportai"
 
 #. module: account_credit_control
 #: view:credit.control.emailer:account_credit_control.credit_line_emailer_form
 msgid "Mailer"
-msgstr ""
+msgstr "Siuntėjas"
 
 #. module: account_credit_control
 #: view:account.invoice:account_credit_control.invoice_followup_form_view
 msgid "Manual Credit Control Policy"
-msgstr ""
+msgstr "Rankinė kredito valdymo politika"
 
 #. module: account_credit_control
 #: view:credit.control.run:account_credit_control.credit_control_run_form
 msgid "Manual Lines"
-msgstr ""
+msgstr "Rankinės eilutės"
 
 #. module: account_credit_control
 #: view:credit.control.line:account_credit_control.credit_control_line_search
 msgid "Manual change"
-msgstr ""
+msgstr "Rankinis pakeitimas"
 
 #. module: account_credit_control
 #: model:credit.control.policy.level,custom_mail_text:account_credit_control.no_follow_1
 #: model:credit.control.policy.level,custom_text:account_credit_control.no_follow_1
 msgid "Manual no follow"
-msgstr ""
+msgstr "Rankinis sekimo nutraukimas"
 
 #. module: account_credit_control
 #: field:credit.control.line,manually_overridden:0
 msgid "Manually overridden"
-msgstr ""
+msgstr "Perrašyta ranka"
 
 #. module: account_credit_control
 #: field:credit.control.marker,name:0
 msgid "Mark as"
-msgstr ""
+msgstr "Pažymeti kaip"
 
 #. module: account_credit_control
 #: field:credit.control.printer,mark_as_sent:0
 msgid "Mark letter lines as sent"
-msgstr ""
+msgstr "Pažymėti laiško eilutes kaip išsiūstas"
 
 #. module: account_credit_control
 #: model:ir.model,name:account_credit_control.model_credit_control_emailer
 msgid "Mass credit line emailer"
-msgstr ""
+msgstr "Masinio kredito eilutės siuntėjas"
 
 #. module: account_credit_control
 #: model:ir.model,name:account_credit_control.model_credit_control_marker
 msgid "Mass marker"
-msgstr ""
+msgstr "Masinis žymeklis"
 
 #. module: account_credit_control
 #: model:ir.model,name:account_credit_control.model_credit_control_printer
 msgid "Mass printer"
-msgstr ""
+msgstr "Masinis spausdinimas"
 
 #. module: account_credit_control
 #: view:credit.control.line:account_credit_control.credit_control_line_search
 msgid "More..."
-msgstr ""
+msgstr "Daugiau..."
 
 #. module: account_credit_control
 #: field:credit.control.line,move_line_id:0
 msgid "Move line"
-msgstr ""
+msgstr "Perkelti eilutę"
 
 #. module: account_credit_control
 #: field:credit.control.policy.changer,move_line_ids:0
 msgid "Move line to change"
-msgstr ""
+msgstr "Perkelkit eilutę kad pakeisti"
 
 #. module: account_credit_control
 #: view:credit.control.policy.changer:account_credit_control.credit_control_policy_changer_form
 msgid "Move lines to affect"
-msgstr ""
+msgstr "Perkelkit eilutę kad paveikti"
 
 #. module: account_credit_control
 #: field:credit.control.policy,name:0 field:credit.control.policy.level,name:0
@@ -704,12 +726,12 @@ msgstr "Pavadinimas"
 #. module: account_credit_control
 #: field:credit.control.policy.changer,new_policy_id:0
 msgid "New Policy to Apply"
-msgstr ""
+msgstr "Naujos politikos taikymas"
 
 #. module: account_credit_control
 #: field:credit.control.policy.changer,new_policy_level_id:0
 msgid "New level to apply"
-msgstr ""
+msgstr "Naujo lygio taikymas"
 
 #. module: account_credit_control
 #: code:addons/account_credit_control/wizard/credit_control_emailer.py:62
@@ -717,38 +739,38 @@ msgstr ""
 #: code:addons/account_credit_control/wizard/credit_control_printer.py:60
 #, python-format
 msgid "No credit control lines selected."
-msgstr ""
+msgstr "Nepasirinkta nei viena kredito valdymo eilutė."
 
 #. module: account_credit_control
 #: model:credit.control.policy.level,name:account_credit_control.no_follow_1
 msgid "No follow"
-msgstr ""
+msgstr "Nesekti"
 
 #. module: account_credit_control
 #: field:credit.control.policy.changer,do_nothing:0
 msgid "No follow  policy"
-msgstr ""
+msgstr "Nesekimo politika"
 
 #. module: account_credit_control
 #: code:addons/account_credit_control/wizard/credit_control_marker.py:78
 #, python-format
 msgid "No lines will be changed. All the selected lines are already done."
-msgstr ""
+msgstr "Eilutės nebus pakeistos. Visos pasirinktos eilutės jau baigtos."
 
 #. module: account_credit_control
 #: help:credit.control.printer,mark_as_sent:0
 msgid "Only letter lines will be marked."
-msgstr ""
+msgstr "Tik raidžių linijos bus pažymėtos."
 
 #. module: account_credit_control
 #: view:credit.control.run:account_credit_control.credit_control_run_form
 msgid "Open Credit Control Lines"
-msgstr ""
+msgstr "Atidaryti kredito valdymo eilutes"
 
 #. module: account_credit_control
 #: view:website:account_credit_control.report_credit_control_summary_document
 msgid "Open amount"
-msgstr ""
+msgstr "Atidaryti kiekį"
 
 #. module: account_credit_control
 #: model:credit.control.policy.level,custom_text:account_credit_control.2_time_1
@@ -761,6 +783,13 @@ msgid ""
 "        Best regards\n"
 "      "
 msgstr ""
+"Mūsų duomenys rodo, kad mes negavome apmokėjimo už pirmiau minėtą sąskaitą.\n"
+"        Jei ji jau buvo išsiųsta, nekreipkite dėmesio į šį pranešimą. Jei ne, prašome atlikti mokėjimą per 10 dienų.\n"
+"\n"
+"        Iš anksto dėkojame už jūsų numatomą bendradarbiavimą šiuo klausimu.\n"
+"\n"
+"        Geriausi linkėjimai\n"
+"      "
 
 #. module: account_credit_control
 #: model:credit.control.policy.level,custom_text:account_credit_control.3_time_1
@@ -773,6 +802,13 @@ msgid ""
 "Best regards\n"
 "      "
 msgstr ""
+"Mūsų duomenys rodo, kad mes negavome apmokėjimo už pirmiau minėtą sąskaitą.\n"
+"Jei ji jau buvo išsiųsta, nekreipkite dėmesio į šį pranešimą. Jei ne, prašome atlikti mokėjimą per 10 dienų.\n"
+"\n"
+"Iš anksto dėkojame už jūsų numatomą bendradarbiavimą šiuo klausimu.\n"
+"\n"
+"Geriausi linkėjimai\n"
+"      "
 
 #. module: account_credit_control
 #: model:credit.control.policy.level,custom_mail_text:account_credit_control.3_time_1
@@ -786,6 +822,14 @@ msgid ""
 "Best regards\n"
 "      "
 msgstr ""
+"Mūsų duomenys rodo, kad mes negavome apmokėjimo už sąskaitas minimas pridedame dokumente.\n"
+"\n"
+"Jei ji jau buvo išsiųsta, nekreipkite dėmesio į šį pranešimą. Jei ne, prašome atlikti mokėjimą per 10 dienų.\n"
+"\n"
+"Iš anksto dėkojame už jūsų numatomą bendradarbiavimą šiuo klausimu.\n"
+"\n"
+"Geriausi linkėjimai\n"
+"      "
 
 #. module: account_credit_control
 #: model:credit.control.policy.level,custom_mail_text:account_credit_control.2_time_1
@@ -798,6 +842,13 @@ msgid ""
 "Best regards\n"
 "      "
 msgstr ""
+"Mūsų duomenys rodo, kad mes negavome apmokėjimo už sąskaitas minimas pridedame dokumente.\n"
+"Jei ji jau buvo išsiųsta, nekreipkite dėmesio į šį pranešimą. Jei ne, prašome atlikti mokėjimą per 10 dienų.\n"
+"\n"
+"Iš anksto dėkojame už jūsų numatomą bendradarbiavimą šiuo klausimu.\n"
+"\n"
+"Geriausi linkėjimai\n"
+"      "
 
 #. module: account_credit_control
 #: model:credit.control.policy.level,custom_text:account_credit_control.3_time_2
@@ -810,6 +861,13 @@ msgid ""
 "Best regards\n"
 "      "
 msgstr ""
+"Mūsų duomenys rodo, kad mes negavome apmokėjimo už pirmiau minėtą sąskaitą, nepaisant mūsų pirmo priminimo.\n"
+"       Jei ji jau buvo išsiųsta, nekreipkite dėmesio į šį pranešimą. Jei ne, prašome atlikti mokėjimą per 5 dienas.\n"
+"\n"
+"Iš anksto dėkojame už jūsų numatomą bendradarbiavimą šiuo klausimu.\n"
+"\n"
+"Geriausi linkėjimai\n"
+"      "
 
 #. module: account_credit_control
 #: model:credit.control.policy.level,custom_mail_text:account_credit_control.3_time_2
@@ -822,6 +880,13 @@ msgid ""
 "Best regards\n"
 "      "
 msgstr ""
+"Mūsų duomenys rodo, kad mes negavome apmokėjimo už sąskaitas minimas pridedame dokumente, nepaisant mūsų pirmo priminimo.\n"
+"       Jei ji jau buvo išsiųsta, nekreipkite dėmesio į šį pranešimą. Jei ne, prašome atlikti mokėjimą per 5 dienas.\n"
+"\n"
+"Iš anksto dėkojame už jūsų numatomą bendradarbiavimą šiuo klausimu.\n"
+"\n"
+"Geriausi linkėjimai\n"
+"      "
 
 #. module: account_credit_control
 #: model:credit.control.policy.level,custom_text:account_credit_control.2_time_2
@@ -840,6 +905,19 @@ msgid ""
 "        Best regards\n"
 "      "
 msgstr ""
+"Mūsų duomenys rodo, kad mes vis dar negavome apmokėjimo už pirmiau minėta sąskaita, nepaisant mūsų priminimo.\n"
+"\n"
+"        Jei mokėjimas jau buvo išsiųstas, nekreipkite dėmesio į šį pranešimą. Jei ne, prašome tęsti mokėjimą.\n"
+"        Jei jūsų mokėjimas nebus gautas per ateinančias 5 dienas, jūsų duomenys bus perduoti mūsų skolų\n"
+"        išieškojimo agentūrai.\n"
+"\n"
+"        Jei jums reikia, kad mes pasirūpintumėme mokėjimo planu jums, prašome pranešti.\n"
+"        Jūsų patogumui, kliento sąskaitos išrašas yra pridedamas.\n"
+"\n"
+"        Iš anksto dėkojame už jūsų numatomą bendradarbiavimą šiuo klausimu.\n"
+"\n"
+"        Geriausi linkėjimai\n"
+"      "
 
 #. module: account_credit_control
 #: model:credit.control.policy.level,custom_mail_text:account_credit_control.2_time_2
@@ -858,6 +936,19 @@ msgid ""
 "        Best regards\n"
 "      "
 msgstr ""
+"Mūsų duomenys rodo, kad mes vis dar negavome apmokėjimo už sąskaitas minimas pridedame dokumente, nepaisant mūsų priminimo.\n"
+"\n"
+"Jei mokėjimas jau buvo išsiųstas, nekreipkite dėmesio į šį pranešimą. Jei ne, prašome tęsti mokėjimą.\n"
+"Jei jūsų mokėjimas nebus gautas per ateinančias 5 dienas, jūsų duomenys bus perduoti mūsų skolų\n"
+"        išieškojimo agentūrai.\n"
+"\n"
+"        Jei jums reikia, kad mes pasirūpintumėme mokėjimo planu jums, prašome pranešti.\n"
+"        Jūsų patogumui, kliento sąskaitos išrašas yra pridedamas.\n"
+"\n"
+"        Iš anksto dėkojame už jūsų numatomą bendradarbiavimą šiuo klausimu.\n"
+"\n"
+"        Geriausi linkėjimai\n"
+"      "
 
 #. module: account_credit_control
 #: model:credit.control.policy.level,custom_mail_text:account_credit_control.3_time_3
@@ -874,16 +965,27 @@ msgid ""
 "        Best regards\n"
 "      "
 msgstr ""
+"Mūsų duomenys rodo, kad mes vis dar negavome apmokėjimo už sąskaitas minimas pridedame dokumente, nepaisant mūsų dviejų priminimų.\n"
+"        Jei mokėjimas jau buvo išsiųstas, nekreipkite dėmesio į šį pranešimą. Jei ne, prašome tęsti mokėjimą.\n"
+"        Jei jūsų mokėjimas nebus gautas per ateinančias 5 dienas, jūsų duomenys bus perduoti mūsų skolų išieškojimo agentūrai.\n"
+"\n"
+"        Jei jums reikia, kad mes pasirūpintumėme mokėjimo planu jums, prašome pranešti.\n"
+"        Jūsų patogumui, kliento sąskaitos išrašas yra pridedamas.\n"
+"\n"
+"        Iš anksto dėkojame už jūsų numatomą bendradarbiavimą šiuo klausimu.\n"
+"\n"
+"        Geriausi linkėjimai\n"
+"      "
 
 #. module: account_credit_control
 #: model:ir.model,name:account_credit_control.model_mail_mail
 msgid "Outgoing Mails"
-msgstr ""
+msgstr "Siunčiami laiškai"
 
 #. module: account_credit_control
 #: field:credit.control.line,policy_level_id:0
 msgid "Overdue Level"
-msgstr ""
+msgstr "Vėlavimo lygis"
 
 #. module: account_credit_control
 #: field:credit.control.communication,partner_id:0
@@ -897,163 +999,163 @@ msgstr "Partneris"
 #: code:addons/account_credit_control/run.py:109
 #, python-format
 msgid "Please select a policy"
-msgstr ""
+msgstr "Prašome pasirinkti politiką"
 
 #. module: account_credit_control
 #: code:addons/account_credit_control/wizard/credit_control_policy_changer.py:61
 #, python-format
 msgid "Please use wizard on customer invoices"
-msgstr ""
+msgstr "Prašome naudoti vedlį klientų sąskaitoms"
 
 #. module: account_credit_control
 #: view:credit.control.run:account_credit_control.credit_control_run_form
 #: field:credit.control.run,policy_ids:0
 msgid "Policies"
-msgstr ""
+msgstr "Politikos"
 
 #. module: account_credit_control
 #: code:addons/account_credit_control/run.py:132
 #, python-format
 msgid "Policy \"<b>%s</b>\" has generated <b>%d Credit Control Lines.</b><br/>"
-msgstr ""
+msgstr "Politika \"<b>%s</b>\" sugeneravo <b>%d kredito valdymo eilutes.</b><br/>"
 
 #. module: account_credit_control
 #: code:addons/account_credit_control/run.py:136
 #, python-format
 msgid "Policy \"<b>%s</b>\" has not generated any Credit Control Lines.<br/>"
-msgstr ""
+msgstr "Politika \"<b>%s</b>\" nesugeneravo jokių kredito valdymo eilučių<br/>"
 
 #. module: account_credit_control
 #: field:credit.control.policy,level_ids:0
 msgid "Policy Levels"
-msgstr ""
+msgstr "Politikos lygiai"
 
 #. module: account_credit_control
 #: view:credit.control.policy:account_credit_control.credit_control_policy_form
 #: view:credit.control.policy.level:account_credit_control.credit_mangement_policy_level_form
 msgid "Policy level"
-msgstr ""
+msgstr "Politikos lygis"
 
 #. module: account_credit_control
 #: view:credit.control.policy:account_credit_control.credit_control_policy_form
 msgid "Policy levels"
-msgstr ""
+msgstr "Politikos lygiai"
 
 #. module: account_credit_control
 #: selection:credit.control.policy.level,computation_mode:0
 msgid "Previous Reminder"
-msgstr ""
+msgstr "Ankstesnis priminimas"
 
 #. module: account_credit_control
 #: view:credit.control.printer:account_credit_control.credit_line_printer_form
 msgid "Print"
-msgstr ""
+msgstr "Spausdinti"
 
 #. module: account_credit_control
 #: model:ir.actions.act_window,name:account_credit_control.open_credit_line_printer_wizard
 #: model:ir.actions.act_window,name:account_credit_control.open_credit_line_printer_wizard_menu_action
 msgid "Print Lines"
-msgstr ""
+msgstr "Spausdinti eilutes"
 
 #. module: account_credit_control
 #: model:ir.actions.act_window,help:account_credit_control.open_credit_line_printer_wizard
 msgid "Print selected lines"
-msgstr ""
+msgstr "Spausdinti pasirinktas eilutes"
 
 #. module: account_credit_control
 #: view:credit.control.printer:account_credit_control.credit_line_printer_form
 msgid "Print the selected lines"
-msgstr ""
+msgstr "Spausdinti pasirinktas eilutes"
 
 #. module: account_credit_control
 #: view:credit.control.line:account_credit_control.credit_control_line_search
 #: selection:credit.control.line,state:0
 #: selection:credit.control.marker,name:0
 msgid "Ready To Send"
-msgstr ""
+msgstr "Paruošta siųsti"
 
 #. module: account_credit_control
 #: field:credit.control.line,policy_id:0
 #: field:credit.control.policy.level,policy_id:0
 msgid "Related Policy"
-msgstr ""
+msgstr "Susijusi politika"
 
 #. module: account_credit_control
 #: view:credit.control.run:account_credit_control.credit_control_run_form
 #: field:credit.control.run,report:0
 msgid "Report"
-msgstr ""
+msgstr "Raportas"
 
 #. module: account_credit_control
 #: field:credit.control.communication,report_date:0
 msgid "Report Date"
-msgstr ""
+msgstr "Raporto data"
 
 #. module: account_credit_control
 #: view:credit.control.line:account_credit_control.credit_control_line_search
 msgid "Run date"
-msgstr ""
+msgstr "Patikrinimo data"
 
 #. module: account_credit_control
 #: model:ir.actions.act_window,name:account_credit_control.open_credit_line_emailer_wizard
 #: model:ir.actions.act_window,name:account_credit_control.open_credit_line_emailer_wizard_menu_action
 msgid "Send By Email"
-msgstr ""
+msgstr "Siųsti el. paštu"
 
 #. module: account_credit_control
 #: model:ir.actions.act_window,help:account_credit_control.open_credit_line_emailer_wizard
 msgid "Send an email for the selected lines."
-msgstr ""
+msgstr "Siųsti el. laišką dėl pasirinktų eilučių."
 
 #. module: account_credit_control
 #: view:credit.control.emailer:account_credit_control.credit_line_emailer_form
 msgid "Send emails for the selected lines"
-msgstr ""
+msgstr "Siųsti el. laiškus dėl pasirinktų eilučių"
 
 #. module: account_credit_control
 #: view:credit.control.emailer:account_credit_control.credit_line_emailer_form
 msgid "Send the emails"
-msgstr ""
+msgstr "Siųsti el. laiškus"
 
 #. module: account_credit_control
 #: view:credit.control.line:account_credit_control.credit_control_line_search
 msgid "Sent"
-msgstr ""
+msgstr "Išsiūsta"
 
 #. module: account_credit_control
 #: field:credit.control.line,mail_message_id:0
 msgid "Sent Email"
-msgstr ""
+msgstr "Išsiųstas el. laiškas"
 
 #. module: account_credit_control
 #: field:credit.control.line,date_sent:0
 msgid "Sent date"
-msgstr ""
+msgstr "Išsiųstimo data"
 
 #. module: account_credit_control
 #: view:credit.control.policy.changer:account_credit_control.credit_control_policy_changer_form
 msgid "Set current credit level"
-msgstr ""
+msgstr "Nustatyti dabartinį kredito lygį"
 
 #. module: account_credit_control
 #: view:credit.control.policy.changer:account_credit_control.credit_control_policy_changer_form
 msgid "Set new policy"
-msgstr ""
+msgstr "Nustatyti naują politiką"
 
 #. module: account_credit_control
 #: field:credit.control.line,run_id:0
 msgid "Source"
-msgstr ""
+msgstr "Šaltinis"
 
 #. module: account_credit_control
 #: field:credit.control.line,state:0 field:credit.control.run,state:0
 msgid "State"
-msgstr ""
+msgstr "Būsena"
 
 #. module: account_credit_control
 #: view:website:account_credit_control.report_credit_control_summary_document
 msgid "Summary"
-msgstr ""
+msgstr "Santrauka"
 
 #. module: account_credit_control
 #: help:account.invoice,credit_policy_id:0
@@ -1061,6 +1163,8 @@ msgid ""
 "The Credit Control Policy used for this invoice. If nothing is defined, it "
 "will use the account setting or the partner setting."
 msgstr ""
+"Kredito valdymo politika naudomaja šioje sąskaitoje faktūroje. Jei niekas nenurodyta,"
+"bus naudojamas sąskaitos nustatymas arba partnerio nustatymas."
 
 #. module: account_credit_control
 #: help:res.partner,credit_policy_id:0
@@ -1068,6 +1172,8 @@ msgid ""
 "The Credit Control Policy used for this partner. This setting can be forced "
 "on the invoice. If nothing is defined, it will use the company setting."
 msgstr ""
+"Kredito valdymo politika naudomaja šiam partneriui. Šis nustatymas gali būti priverstinai"
+"naudojamas sąskaitos. Jei niekas nenustatyta, jis naudosis įmonės nustatymu."
 
 #. module: account_credit_control
 #: help:res.company,credit_policy_id:0
@@ -1075,32 +1181,34 @@ msgid ""
 "The Credit Control Policy used on partners by default. This setting can be "
 "overridden on partners or invoices."
 msgstr ""
+"Kredito valdymo politika naudomaja partneriu pagal nutylėjimą. Šis nustatymas gali būti "
+"perrašytas per partnerius ar sąskaitas."
 
 #. module: account_credit_control
 #: view:credit.control.line:account_credit_control.credit_control_line_search
 msgid "The line was deprecated by a manual change of policy on invoice."
-msgstr ""
+msgstr "Eilutė buvo nurašyta rankiniu politikos pakeitimu sąskaitai."
 
 #. module: account_credit_control
 #: help:credit.control.line,currency_id:0
 msgid "The optional other currency if it is a multi-currency entry."
-msgstr ""
+msgstr "Neprivaloma kita valiuta, jei tai daugelio valiutų įrašas."
 
 #. module: account_credit_control
 #: code:addons/account_credit_control/policy.py:258
 #, python-format
 msgid "The smallest level can not be of type Previous Reminder"
-msgstr ""
+msgstr "Mažiausias lygis negali būti tipo Ankstesnis Priminimas"
 
 #. module: account_credit_control
 #: view:credit.control.line:account_credit_control.credit_control_line_search
 msgid "These lines are ready to send by email or by letter using the Actions."
-msgstr ""
+msgstr "Šios eilutės yra paruoštos siuntimui el. paštu ar laišku naudojant Veiksmus."
 
 #. module: account_credit_control
 #: help:credit.control.policy,account_ids:0
 msgid "This policy will be active only for the selected accounts"
-msgstr ""
+msgstr "Ši politika bus aktyvi tik pasirinktoms sąskaitoms."
 
 #. module: account_credit_control
 #: view:credit.control.policy.changer:account_credit_control.credit_control_policy_changer_form
@@ -1108,16 +1216,18 @@ msgid ""
 "This wizard will let you set the overdue policy and level for selected "
 "invoices"
 msgstr ""
+"Šis vedlys padės jums nustatyti vėlavimo politiką ir lygį pasirinktoms"
+"sąskaitoms faktūroms"
 
 #. module: account_credit_control
 #: view:website:account_credit_control.report_credit_control_summary_document
 msgid "Total Due"
-msgstr ""
+msgstr "Iš viso mokėtina"
 
 #. module: account_credit_control
 #: view:website:account_credit_control.report_credit_control_summary_document
 msgid "Total Invoiced"
-msgstr ""
+msgstr "Iš viso išrašyta"
 
 #. module: account_credit_control
 #: field:credit.control.communication,user_id:0
@@ -1127,7 +1237,7 @@ msgstr "Naudotojas"
 #. module: account_credit_control
 #: view:credit.control.marker:account_credit_control.credit_line_marker_form
 msgid "Warning: you will maybe not be able to revert this operation."
-msgstr ""
+msgstr "Įspėjimas: jūs galit negalėt gražint šią operaciją."
 
 #. module: account_credit_control
 #: code:addons/account_credit_control/line.py:226
@@ -1136,6 +1246,8 @@ msgid ""
 "You are not allowed to delete a credit control line that is not in draft "
 "state."
 msgstr ""
+"Jums neleidžiama trinti kredito valdymo eilutės kuri nėra juodraščio "
+"būsenos."
 
 #. module: account_credit_control
 #: code:addons/account_credit_control/policy.py:203
@@ -1145,6 +1257,9 @@ msgid ""
 "Please choose one of the following policies:\n"
 " %s"
 msgstr ""
+"Jūs galit naudoti tik politiką nustatyta sąskaitai %s.\n"
+"Prašome pasirinkti vieną iš šių politikų:\n"
+" %s"
 
 #. module: account_credit_control
 #: code:addons/account_credit_control/invoice.py:57
@@ -1154,11 +1269,14 @@ msgid ""
 "A payment reminder has already been sent to the customer.\n"
 "You must create a credit note and issue a new invoice."
 msgstr ""
+"Jūs negalite atšaukti šios sąskaitos.\n"
+"Mokėjimo priminimas jau buvo išsiūstas klientui.\n"
+"Privalote sukurti kredito pastaba ir išduoti naują sąskaitą faktūrą."
 
 #. module: account_credit_control
 #: model:ir.model,name:account_credit_control.model_credit_control_communication
 msgid "credit control communication"
-msgstr ""
+msgstr "kredito valdymo komunikacija"
 
 #. module: account_credit_control
 #: field:credit.control.line,level:0
